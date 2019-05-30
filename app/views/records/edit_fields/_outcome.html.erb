@@ -1,0 +1,5 @@
+<%= f.input :outcome, as: :select,
+    collection: ReviewOutcomeService.select_all_options,
+    include_blank: '-select review outcome-',
+    input_html: { class: 'form-control' }
+%>

@@ -1,0 +1,14 @@
+<div class="multi-nested">
+  <%= f.input :related_identifier_nested,
+    as: :related_identifier_statement,
+    input_html: {
+      class: '',
+      data: {name: :related_identifier_nested}
+    },
+    required: f.object.required?(:related_identifier_nested)
+  %>
+  <button type="button" class="btn btn-link add">
+    <span class="glyphicon glyphicon-plus"></span>
+    <span class="controls-add-text">Add another related identifier</span>
+  </button>
+</div>

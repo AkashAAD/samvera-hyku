@@ -1,0 +1,16 @@
+<tr class="<%= dom_class(member) %> attributes">
+  <td class="thumbnail">
+    <% if !member.image? %>
+      <a data-context-href="/catalog/<%= member.to_param %>/track?locale=en&amp;search_id=2" 
+         href="/concern/file_sets/<%= member.to_param %>?locale=en"><%= image_tag "work.png", alt: member.to_param + "?file=thumbnail" %></a>
+    <%else%>
+      <%= render_thumbnail_tag member  %>
+    <%end%>
+  </td>
+  <td class="attribute attribute-filename ensure-wrapped"><%= link_to(member.link_name, contextual_path(member, @presenter)) %></td>
+  <td class="attribute attribute-date_uploaded"><%= member.try(:date_uploaded) %></td>
+  <td class="attribute attribute-permission"><%= member.permission_badge %></td>
+  <td>
+    <%= render 'actions', member: member %>
+  </td>
+</tr>

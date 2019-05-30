@@ -1,0 +1,28 @@
+<div>
+  <div class="featured-item-title">
+    <span class="sr-only"><%= t('hyrax.homepage.featured_works.document.title_label') %></span>
+    <h3>
+      <%if user_roles(current_user, 'admin') %>
+        <%= link_to [main_app, featured] do %>
+          <% if !featured.solr_document.thumbnail_path.include?("downloads") %>
+            <%= render_thumbnail_tag(featured, {width: 90}, {suppress_link: true}) + featured.title.first %>
+          <%else%>
+            <%= image_tag "work.png", alt: "work" %><%#= featured.title.first %>
+          <%end%>
+        <%end%>
+      <%end%>
+    </h3>
+  </div>
+  <div class="featured-field featured-item-depositor">
+    <span class="featured-label"><%= t('hyrax.homepage.featured_works.document.title') %>: </span>
+    <%= link_to [main_app, featured] do %>
+      <%= featured.title.first %>
+    <%end%>
+  </div>  
+  <div class="featured-field featured-item-depositor">
+    <span class="featured-label"><%= t('hyrax.homepage.featured_works.document.depositor_label') %>:</span> <%= link_to_profile featured.depositor(t('hyrax.homepage.featured_works.document.depositor_missing')) %>
+  </div>
+  <div class="featured-field featured-item-keywords">
+    <span class="featured-label"><%= t('hyrax.homepage.featured_works.document.keyword_label') %>:</span> <%= link_to_facet_list(featured.keyword, 'keyword', t('hyrax.homepage.featured_works.document.keyword_missing')) %>
+  </div>
+</div>

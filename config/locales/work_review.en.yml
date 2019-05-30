@@ -1,0 +1,8 @@
+en:
+  hyrax:
+    icons:
+      work_review:     'fa fa-file-text-o'
+    select_type:
+      work_review:
+        description:        "Work review works"
+        name:               "Work Review"

@@ -1,0 +1,22 @@
+en:
+  hyrax:
+    icons:
+      dataset:     'fa fa-file-text-o'
+    select_type:
+      dataset:
+        description:        "Dataset works"
+        name:               "Dataset"
+  simple_form:
+    labels:
+      dataset:
+        creator_nested:                          "Creators"
+        geolocation_nested:                      "Geolocations"
+        funding_nested:                          "Fundings"
+        identifier_nested:                       "Identifiers"
+        alt_identifier_nested:                   "Alternate Identifiers"
+        related_identifier_nested:               "Related Identifiers"
+        rights_nested:                           "Rights"
+        subject_nested:                          "Subjects"
+        description_nested:                      "Description"
+        work_review_process:                     "Work Review Process"
+        

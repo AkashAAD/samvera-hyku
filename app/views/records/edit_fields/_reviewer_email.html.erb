@@ -1,0 +1,8 @@
+<%= f.input :reviewer_email,
+  as: :hidden,
+  input_html: {
+    class: '',
+    data: {name: :reviewer_email},
+    value: current_user.email
+  }
+%>

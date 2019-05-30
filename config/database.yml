@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: pguser
+  password: password
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: ebsco_poc_development
+
+test:
+  <<: *default
+  database: ebsco_poc_test
+
+# production:
+#   <<: *default
+#   database: ebsco_poc_development

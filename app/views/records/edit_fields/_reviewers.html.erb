@@ -1,0 +1,16 @@
+<% if  user_roles(current_user, 'admin') %>
+  <div class="multi-nested">
+    <%= f.input :reviewers,
+      as: :reviewers_statement,
+      input_html: {
+        class: '',
+        data: {name: :reviewers}
+      },
+      required: f.object.required?(:reviewers)
+    %>
+    <button type="button" class="btn btn-link add">
+      <span class="glyphicon glyphicon-plus"></span>
+      <span class="controls-add-text">Add new Reviewer</span>
+    </button>
+  </div>
+<%end%>

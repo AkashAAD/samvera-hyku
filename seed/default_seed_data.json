@@ -1,0 +1,301 @@
+{
+  "users" : [
+    {
+      "display_name": "Ebsco User",
+      "email" : "user@ebsco.com",
+      "password" : "password",
+      "role" : "user",
+      "depositor" : true      
+    },{
+      "display_name": "Ebsco Superadmin",
+      "email" : "superadmin@ebsco.com",
+      "password" : "password",
+      "role" : "superadmin"
+    },    
+    {
+      "display_name": "Ebsco Admin",
+      "email" : "admin@ebsco.com",
+      "password" : "password",
+      "role" : "admin"
+    },
+    {
+      "display_name": "Workflow Admin",
+      "email" : "workflow@ebsco.com",
+      "password": "password",
+      "role" : "admin"
+    }
+  ],
+  "tenent_repositories" : [
+    {
+      "repository" : "My first repository"
+    }, {
+      "repository" : "My second repository"
+    }
+  ],
+  "tenent_users" : {
+    "0" : [
+      {
+        "display_name": "First Admin Tenant",
+        "email" : "first_admin_tenant@ebsco.com",
+        "password": "password",
+        "role" : "admin"
+      },{
+        "display_name": "First User Tenant",
+        "email" : "first_user_tenant@ebsco.com",
+        "password": "password",
+        "role" : "user"
+      },{
+        "display_name": "First Reviewer User Tenant",
+        "email" : "first_reviewer_tenant@ebsco.com",
+        "password": "password",
+        "role" : "reviewer"
+      },{
+        "display_name": "Second Reviewer User Tenant",
+        "email" : "second_reviewer_tenant@ebsco.com",
+        "password": "password",
+        "role" : "reviewer"
+      },{
+        "display_name": "Third Reviewer User Tenant",
+        "email" : "third_reviewer_tenant@ebsco.com",
+        "password": "password",
+        "role" : "reviewer"
+      }
+    ],
+    "1" : [
+      {
+        "display_name": "Second Admin Tenant",
+        "email" : "second_admin_tenant@ebsco.com",
+        "password": "password",
+        "role" : "admin"
+      },{
+        "display_name": "Second User Tenant",
+        "email" : "second_user_tenant@ebsco.com",
+        "password": "password",
+        "role" : "user"
+      },{
+        "display_name": "First Reviewer User Tenant",
+        "email" : "first_reviewer_tenant@ebsco.com",
+        "password": "password",
+        "role" : "reviewer"
+      },{
+        "display_name": "Second Reviewer User Tenant",
+        "email" : "second_reviewer_tenant@ebsco.com",
+        "password": "password",
+        "role" : "reviewer"
+      },{
+        "display_name": "Third Reviewer User Tenant",
+        "email" : "third_reviewer_tenant@ebsco.com",
+        "password": "password",
+        "role" : "reviewer"
+      }
+    ]
+  },
+  "site_text" : {
+    "marketing" : [
+      "Markeing Description"
+    ],
+    "about" : [
+      "About Ebsco project"
+    ]
+  },
+
+  "collections" : [
+    {
+      "id": "political_department",
+      "metadata" : {
+        "title": ["Department of Politics"],
+        "resource_type": ["Thesis"],
+        "creator": [ "P. K. Sighna" ],
+        "description": ["This is a collection of thesis from the Department of Politics"],
+        "keyword": ["thesis", "politics"],
+        "license": ["www.political_depo.com"],
+        "publisher": ["University of Ebsco"],
+        "date_created": ["2017-08-10"],
+        "subject": ["ebcso thesis"],
+        "language": ["English"],
+        "visibility": "open"
+      }
+    }, {
+      "id": "healthcare_department",
+      "metadata" : {
+        "title": ["Department of Healthcare"],
+        "resource_type": ["Thesis"],
+        "creator": [ "J. R. Kenedy" ],
+        "description": ["This is a collection of thesis from the Department of Healthcare"],
+        "keyword": ["thesis", "healthcare"],
+        "license": ["www.healthcare_depo.com"],
+        "publisher": ["University of Ebsco"],
+        "date_created": ["2016-10-11"],
+        "subject": ["ebcso thesis"],
+        "language": ["Espanole"],
+        "visibility": "open"
+      }
+    }, {
+      "id": "media_department",
+      "metadata" : {
+        "title": ["Department of Media/Entertainment"],
+        "resource_type": ["Records"],
+        "creator": [ "L. K. James", "R. T. Kevin" ],
+        "description": ["This is a collection of records from the Department of Media/Entertainment"],
+        "keyword": ["thesis", "media", "songs", "entertainment"],
+        "license": ["www.entertainment_depo.com"],
+        "publisher": ["University of Ebsco"],
+        "date_created": ["1999-09-01"],
+        "subject": ["ebcso records"],
+        "language": ["Espanole"],
+        "visibility": "open"
+      }
+    }, {
+      "id": "environmental_department",
+      "metadata" : {
+        "title": ["Department of Media/Entertainment"],
+        "resource_type": ["Records"],
+        "creator": [ "MJ", "Guns N Roses" ],
+        "description": ["This is a collection of records from the Department of Media/Entertainment"],
+        "keyword": ["thesis", "media", "songs", "entertainment"],
+        "license": ["www.entertainment_depo.com"],
+        "publisher": ["University of Ebsco"],
+        "date_created": ["1999-09-01"],
+        "subject": ["ebcso records"],
+        "language": ["Espanole"],
+        "visibility": "open"
+      }
+    }
+  ],
+
+  "works" : [
+    {
+      "id" : "ebsco_work1",
+      "metadata" : {
+        "title": ["Ebsco first dedicated work"],
+        "resource_type": ["Marketing"],
+        "creator": ["nathan09"],
+        "description": ["All marketing works manage and handled here."],
+        "keyword": ["work", "marketing"],
+        "license": ["http://creativecommons.org/publicdomain/zero/1.0/"],
+        "rights_statement": ["http://rightsstatements.org/vocab/NoC-NC/1.0/"],
+        "publisher": ["University of Ebsco"],
+        "date_created": ["2013-07-23"],
+        "subject": ["ebsco image"],
+        "language": ["English"],
+        "visibility": "open"
+      },
+      "files" : [
+        {
+          "id" : "file1",
+          "path" : "/assets/images/ccsummit2019.png",
+          "metadata" : {
+            "creator" : ["nathan09"],
+            "visibility" : "open"
+          }
+        }
+      ],
+      "collections" : ["political_department"],
+      "featured" : true
+    }, {
+      "id" : "ebsco_work2",
+      "metadata" : {
+        "title": ["Ebsco second dedicated work"],
+        "resource_type": ["Operational"],
+        "creator": ["json8989"],
+        "description": ["All operational works manage and handled here."],
+        "keyword": ["work", "operational"],
+        "license": ["http://creativecommons.org/publicdomain/zero/1.0/"],
+        "rights_statement": ["http://rightsstatements.org/vocab/NoC-NC/1.0/"],
+        "publisher": ["University of Ebsco"],
+        "date_created": ["2013-07-23"],
+        "subject": ["ebsco image"],
+        "language": ["English"],
+        "visibility": "open"
+      },
+      "files" : [
+        {
+          "id" : "file2",
+          "path" : "/assets/images/photo-1430933964450-0aefb85717c8.jpeg",
+          "metadata" : {
+            "creator" : ["json8989"],
+            "visibility" : "open"
+          }
+        }
+      ],
+      "collections" : ["political_department"],
+      "featured" : true
+    }, {
+      "id" : "ebsco_work3",
+      "metadata" : {
+        "title": ["Ebsco third dedicated work"],
+        "resource_type": ["Consumer"],
+        "creator": ["smithoke34"],
+        "description": ["All consumer works manage and handled here."],
+        "keyword": ["work", "consumer"],
+        "license": ["http://creativecommons.org/publicdomain/zero/1.0/"],
+        "rights_statement": ["http://rightsstatements.org/vocab/NoC-NC/1.0/"],
+        "publisher": ["University of Ebsco"],
+        "date_created": ["2013-07-23"],
+        "subject": ["ebsco image"],
+        "language": ["English"],
+        "visibility": "open"
+      },
+      "files" : [
+        {
+          "id" : "file3",
+          "path" : "/assets/images/photo-1445964047600-cdbdb873673d.jpeg",
+          "metadata" : {
+            "creator" : ["json8989"],
+            "visibility" : "open"
+          }
+        }
+      ],
+      "collections" : ["political_department"],
+      "featured" : true
+    }, {
+      "id" : "ebsco_work4",
+      "metadata" : {
+        "title": ["Ebsco fourth dedicated work"],
+        "resource_type": ["Science and Technology"],
+        "creator": ["makrjoh12"],
+        "description": ["All science and technology works manage and handled here."],
+        "keyword": ["work", "science", "technology"],
+        "license": ["http://creativecommons.org/publicdomain/zero/1.0/"],
+        "rights_statement": ["http://rightsstatements.org/vocab/NoC-NC/1.0/"],
+        "publisher": ["University of Ebsco"],
+        "date_created": ["2013-07-23"],
+        "subject": ["ebsco image"],
+        "language": ["English"],
+        "visibility": "open"
+      },
+      "files" : [
+        {
+          "id" : "file4",
+          "path" : "/assets/images/photo-1537801630291-dc5924ea4db1.jpeg",
+          "metadata" : {
+            "creator" : ["makrjoh12"],
+            "visibility" : "open"
+          }
+        }
+      ],
+      "collections" : ["political_department"],
+      "featured" : true
+    }
+  ],
+  "administrative_sets" : [
+    {
+      "id" : "ebsco_admin_set",
+      "metadata" : {
+        "title": ["Ebsco administrative set"],
+        "description": ["An administrative set using the one-step mediated workflow"],
+        "creator": ["admin@ebsco.com"],
+        "read_groups": ["public"],
+        "edit_groups": ["admin"]
+      },
+      "permission_template": {
+        "workflow_name": "one_step_mediated_deposit",
+        "permission_template_access" : [
+          {
+            "agent_type": "group", "agent_id": "registered", "access": "deposit"
+          }
+        ]
+      }
+    }
+  ]
+}

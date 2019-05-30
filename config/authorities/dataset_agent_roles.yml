@@ -1,0 +1,61 @@
+terms:
+  - id: contactPerson
+    term: Contact person
+  - id: dataCollector
+    term: Data collector
+  - id: dataCurator
+    term: Data curator
+  - id: dataManager
+    term: Data manager
+  - id: distributor
+    term: Distributor
+  - id: editor
+    term: Editor
+  - id: postingInstitution
+    term: Hosting institution
+  - id: producer
+    term: Producer
+  - id: projectLeader
+    term: Project leader
+  - id: projectManager
+    term: Project manager
+  - id: projectMember
+    term: Project member
+  - id: registrationAgency
+    term: Registration agency
+  - id: registrationAuthority
+    term: Registration authority
+  - id: relatedPerson
+    term: Related person
+  - id: researcher
+    term: Researcher
+  - id: researchGroup
+    term: Research group
+  - id: rightsHolder
+    term: Rights holder
+  - id: sponsor
+    term: Sponsor
+  - id: supervisor
+    term: Supervisor
+  - id: workPackageLeader
+    term: Work package leader
+  - id: administrator
+    term: Administrator
+  - id: author
+    term: Author
+  - id: dataAnalyser
+    term: Data Analyser
+  - id: dataCollector
+    term: Data Collector
+  - id: dataCreator
+    term: Data Creator
+  - id: depositingUser
+    term: Depositing User
+  - id: investigator
+    term: Investigator
+  - id: publisher
+    term: Publisher
+  - id: researcherGroup
+    term: Researcher Group
+  - id: other
+    term: Other

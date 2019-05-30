@@ -1,0 +1,10 @@
+es:
+  hyrax:
+    icons:
+      work_review:     'fa fa-file-text-o'
+    select_type:
+      work_review:
+        # TODO: translate `human_name` into Spanish
+        description:        "Work review trabajos"
+        name:               "Work Review"
+        # TODO: translate `human_name` into Spanish

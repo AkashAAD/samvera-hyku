@@ -1,0 +1,29 @@
+terms:
+  - id: Accepted
+    term: Accepted
+  - id: Available
+    term: Available
+  - id: Copyrighted
+    term: Copyrighted
+  - id: Collected
+    term: Collected
+  - id: Created
+    term: Created
+  - id: Issued
+    term: Issued
+  - id: Updated
+    term: Updated
+  - id: Valid
+    term: Valid
+  - id: approved
+    term: Approved
+  - id: awarded
+    term: Awarded
+  - id: modified
+    term: Modified
+  - id: posted
+    term: Posted
+  - id: published
+    term: Published
+  - id: Other
+    term: Other

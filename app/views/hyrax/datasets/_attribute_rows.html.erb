@@ -1,0 +1,105 @@
+<%= presenter.attribute_to_html(:other_title, render_as: :other_title, label: I18n.t('ebsco.fields.other_title')) %>
+<%= presenter.attribute_to_html(:publisher, render_as: :faceted) %>
+<%= presenter.attribute_to_html(:language, render_as: :faceted) %>
+<%= presenter.attribute_to_html(:publication_year, render_as: :publication_year, label: I18n.t('ebsco.fields.publication_year')) %>
+<%= presenter.attribute_to_html(:dataset_size, render_as: :dataset_size, label: I18n.t('ebsco.fields.dataset_size')) %>
+<%= presenter.attribute_to_html(:dataset_format, render_as: :dataset_format, label: I18n.t('ebsco.fields.dataset_format')) %>
+<%= presenter.attribute_to_html(:dataset_version, render_as: :dataset_version, label: I18n.t('ebsco.fields.dataset_version')) %>
+<%= presenter.attribute_to_html(:creator_nested, render_as: :nested_creator, label: I18n.t('ebsco.fields.creator_nested')) %>
+<%#= presenter.attribute_to_html(:contributor_nested, render_as: :nested_contributor, label: I18n.t('ebsco.fields.contributor_nested')) %>
+<%= presenter.attribute_to_html(:identifier_nested, render_as: :nested_identifier, label: I18n.t('ebsco.fields.identifier_nested')) %>
+<%#= presenter.attribute_to_html(:alt_identifier_nested, render_as: :nested_alt_identifier, label: I18n.t('ebsco.fields.alt_identifier_nested')) %>
+<%#= presenter.attribute_to_html(:rights_nested, render_as: :nested_rights, label: I18n.t('ebsco.fields.rights_nested')) %>
+<%= presenter.attribute_to_html(:description_nested, render_as: :nested_description, label: I18n.t('ebsco.fields.description_nested')) %>
+<%= presenter.attribute_to_html(:subject_nested, render_as: :nested_subject, label: I18n.t('ebsco.fields.subject_nested')) %>
+<%= presenter.attribute_to_html(:funding_nested, render_as: :nested_funding, label: I18n.t('ebsco.fields.funding_nested')) %>
+<%= presenter.attribute_to_html(:geolocation_nested, render_as: :nested_geolocation, label: I18n.t('ebsco.fields.geolocation_nested')) %>
+<%= presenter.attribute_to_html(:related_url, render_as: :related_url_links, label: I18n.t('ebsco.fields.related_url')) %>
+<%# if current_user.roles.pluck(:name).include?('reviewer') %>
+  <%#= presenter.attribute_to_html(:work_review_process, render_as: :nested_work_review_process, label: I18n.t('ebsco.fields.work_review_process')) %>
+<%#end%>
+<% if !user_roles(current_user, 'user') %>
+  <%= presenter.attribute_to_html(:reviewers, render_as: :nested_reviewers, label: I18n.t('ebsco.fields.reviewers')) %>
+<%end%>
+<%= presenter.attribute_to_html(:related_identifier_nested, render_as: :nested_related_identifier, label: I18n.t('ebsco.fields.related_identifier_nested')) %>
+<%#= presenter.attribute_to_html(:date_nested, render_as: :nested_date, label: I18n.t('ebsco.fields.date_nested')) %>
+<% if user_roles(current_user, 'reviewer') %>
+  <ul class="tabular">
+    <li class="attribute attribute-add-review">
+      <a href="<%= request.base_url + "/concern/work_reviews/new?work_review_creator=#{current_user.display_name}&work_review_title=#{presenter.title.first}&dataset_id=#{params[:id]}&locale=en" %>" class="btn btn-primary" target="_blank">Add Review</a>
+    </li>
+  </ul><br>
+<%end%>
+
+<!-- <table class="table">
+  <tr>
+    <th>Reviewers</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<table class="table">
+  <tr>
+    <th>Sr. No.</th>
+    <th>Date Modified</th>
+    <th>Reviewers</th>
+    <th>Admin Comments</th>
+    <th>User Comments</th>
+    <th>User Report</th>
+    <th>Outcome</th>    
+  </tr>
+  <%# get_reviews(current_user.email, params[:id]).each_with_index do |review, index| %>
+    <tr>
+      <td><%#= index + 1 %></td>
+      <td><%#= review.date_modified %></td>
+      <td><%#= current_user.display_name %></td>
+      <td><%#= review.admin_comment %></td>
+      <td><%#= review.user_comment %></td>
+      <td><%#= "Files" %></td>
+      <td><%#= review.outcome %></td>
+    </tr>
+  <%#end%>
+</table> -->
+
+<div id="youtube_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="youtube-dataset-modal-title"></h4>
+      </div>
+      <div class="youtube-dataset-modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- <div id="work_review_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="width: 1700px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4>Add Review</h4>
+      </div>
+      <div class="modal-body">
+        <iframe height="1000" width="1650" src="<%#= request.base_url + "/concern/work_reviews/new?locale=en" %>">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div> -->

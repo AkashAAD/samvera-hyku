@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-login">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2><%= t 'devise.invitations.edit.header' %></h2>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-lg-12">
+              <%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put } do |f| %>
+                <%= devise_error_messages! %>
+                <%= f.hidden_field :invitation_token %>
+
+                <% if f.object.class.require_password_on_accepting %>
+                  <%= f.label :password %>
+                  <%= f.password_field :password, class: "form-control" %><br>
+                  <%= f.label :password_confirmation %>
+                  <%= f.password_field :password_confirmation, class: "form-control" %>
+                <% end %><br>
+                <%= f.submit t("devise.invitations.edit.submit_button"), class: "btn btn-primary" %>
+              <% end %>
+            </div>
+            <div class="col-lg-6" style="padding-top: 20px;">
+              <%- if controller_name != 'sessions' %>
+                <%= link_to "Log in", new_session_path(resource_name) %><br />
+              <% end -%>              
+            </div>
+            <div class="col-lg-6 text-right" style="padding-top: 20px;">
+              <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+                <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+              <% end -%>              
+            </div>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

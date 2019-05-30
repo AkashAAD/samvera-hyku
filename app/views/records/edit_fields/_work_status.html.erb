@@ -1,0 +1,9 @@
+<%#= f.input :work_status, as: :select,
+    collection: WorkStatusesService.select_all_options,
+    data: { name: :work_status },
+    include_blank: '-select work status-',
+    selected: f.object.work_status.blank? ? 'Submitted' : f.object.work_status,
+    disabled: current_user.roles.pluck(:name).include?('user') ? true : false,
+    input_html: { class: 'form-control' },
+    required: f.object.required?(key)
+%>

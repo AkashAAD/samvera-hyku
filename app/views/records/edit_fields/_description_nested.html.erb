@@ -1,0 +1,14 @@
+<div class="multi-nested">
+  <%= f.input :description_nested,
+    as: :description_statement,
+    input_html: {
+      class: '',
+      data: {name: :description_nested}
+    },
+    required: f.object.required?(:description_nested)
+  %>
+  <!-- <button type="button" class="btn btn-link add">
+    <span class="glyphicon glyphicon-plus"></span>
+    <span class="controls-add-text">Add another Subject</span>
+  </button> -->
+</div>

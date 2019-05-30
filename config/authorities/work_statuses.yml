@@ -1,0 +1,15 @@
+terms:
+  - id: Submitted
+    term: Submitted
+  - id: Accepted
+    term: Accepted
+  - id: Published
+    term: Published
+  - id: Selecting reviewers
+    term: Selecting reviewers
+  - id: In review
+    term: In review
+  - id: Changes requested
+    term: Changes requested    
+  - id: Other
+    term: Other

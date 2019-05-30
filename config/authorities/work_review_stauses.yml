@@ -1,0 +1,13 @@
+terms:
+  - id: Invitation Sent
+    term: Invitation Sent
+  - id: Invitation Accepted
+    term: Invitation Accepted
+  - id: Not Needed
+    term: Not Needed
+  - id: Request Review
+    term: Request Review
+  - id: Reviewing
+    term: Reviewing
+  - id: Completed
+    term: Completed
